@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+    <link id = "meaning_list"nk rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="dictonary_container container px-4">
+      <div class="dictionary_content">
+        <div class="left">
+          <img id="left_image" src="./assets/book.svg" alt="book" />
+        </div>
+        <div class="right">
+          <select name="" id="">
+            <option value="roboto">Serif</option>
+            <option value="roboto">Poppings</option>
+            <option value="roboto">Roboto</option>
+            <option value="nunito">Nunito</option>
+          </select>
+          <img id="dark_mode_icon" src="./assets/half-moon.svg" alt="moon" />
+        </div>
+      </div>
+      <form id="form" class="dictionary_search">
+        <input
+          id="user_input"
+          type="text"
+          placeholder="Search nouns or pharses..."
+        />
+        <span id="search_btn">
+          <img src="./assets/search.svg" alt="search" />
+        </span>
+      </form>
+      <div class="dictionary_header">
+        <div class="header_left">
+          <h3 id="dictionary_word">keyboard</h3>
+          <p id="dictionary_phonetic">/ˈkiːbɔːd/</p>
+        </div>
+        <div class="header_right">
+          <img id="play_button" src="./assets/play.svg" alt="play" />
+          <audio id="audio" src=""></audio>
+        </div>
+      </div>
+
+      <div class="dictionary_speech">
+        <h3 id="part_of_speech_noun">noun</h3>
+        <div></div>
+      </div>
+      <div class="dictionary_meaning">
+        <p class="title">Meaning</p>
+        <ul>
+          <li id = "meaning_item">
+            (etc.) A set of keys used to operate a typewriter, computer etc.
+          </li>
+          <li id = "meaning_item">
+            (etc.) A set of keys used to operate a typewriter, computer etc.
+          </li>
+          <li id = "meaning_item">
+            A component of many instruments including the piano, organ, and
+            <br />
+            harpsichord consisting of usually black and white keys that cause
+            <br />
+            different tones to be produced when struck." <br />
+            </li>
+        </ul>
+        <div class="synonyms_title">
+          <p>Synonyms</p>
+          <h3 class="font-semibold synon" id="synonyms font-semibold block">Electronic Keyboard</h3>
+        </div>
+      </div>
+
+      <div class="dictionary_speech">
+        <h3 id="part_of_speech_verb">noun</h3>
+        <div></div>
+      </div>
+      <div class="dictionary_meaning">
+        <p class="title">Meaning</p>
+        <ul>
+          <li id = "meaning_list" id="second_meaning_li id = "meaning_list"st">
+               To type on a computer keyboard.
+          </li id = "meaning_list">
+        </ul>
+      </div>
+
+      <div id="horizontal"></div>
+      <div class=" py-4 px-4 flex justify-between items-center flex-wrap gap-4">
+          <p class="title">Source</p>
+          <a class=" text-sm text-slate-600 hover:text-blue-600 transition-all" id="source_id" href="https://api.dictionaryapi.dev/api/v2/entries/en/keyboard">https://api.dictionaryapi.dev/api/v2/entries/en/keyboard</a>
+      </div>
+     </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
